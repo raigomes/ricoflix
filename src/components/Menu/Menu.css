@@ -1,0 +1,12 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    border: 2px solid var(--green);
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 100px;
+}

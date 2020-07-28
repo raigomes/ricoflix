@@ -1,0 +1,8 @@
+.btnMenu {
+    font-weight: bold;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 8px 20px;
+}

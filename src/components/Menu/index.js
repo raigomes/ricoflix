@@ -3,7 +3,6 @@ import React from 'react'
 import Logo from '../../assets/img/logo.png'
 
 import './Menu.css'
-import Button from '../Button'
 
 function Menu () {
   return (
@@ -11,9 +10,9 @@ function Menu () {
       <a href='/'>
         <img className='logo' src={Logo} alt='Logo do Ricoflix' />
       </a>
-      <Button>
+      <button className='btnMenu'>
         Novo vídeo
-      </Button>
+      </button>
     </nav>
   )
 }

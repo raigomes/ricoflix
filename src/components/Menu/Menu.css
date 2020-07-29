@@ -1,12 +1,25 @@
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--black);
-    border: 2px solid var(--green);
-    padding: 10px 20px;
+    border-bottom: 2px solid var(--green);
+    padding: 7px 0 2px;
 }
 
 .logo {
-    width: 100px;
+    width: 105px;
+    height: 25px;
+}
+
+@media(min-width: 661px) {
+    .menu {
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .logo {
+        width: 168px;
+        height: 40px;
+    }
 }

@@ -22,8 +22,8 @@
     background-color: var(--green);
     color: var(--white);
     padding: 14px 0;
+    z-index: 2;
 }
-
 
 @media(min-width: 661px) {
     .menu {

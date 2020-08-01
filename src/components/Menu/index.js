@@ -10,7 +10,7 @@ function Menu (props) {
       <a href='/'>
         <img className='logo' src={Logo} alt='Logo do Ricoflix' />
       </a>
-      if (props.btnCadastro) {
+      {props.btnCadastro &&
         <button className='btnMenu'>
           Novo vídeo
         </button>

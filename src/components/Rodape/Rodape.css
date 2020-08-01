@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-.rodape .container {
+.rodape--container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,19 +14,19 @@
     width: 300px;
 }
 
-.rodape .logo {
+.rodape--logo {
     width: 120px;
     height: 30px;
 }
 
-.rodape .descricao {
+.rodape--descricao {
     font-size: 18px;
     line-height: 21px;
     font-weight: 300;
     margin: 15px 0 0;
 }
 
-.rodape .descricao span {
+.rodape--descricao span {
     font-weight: bold;
     color: var(--green);
 }

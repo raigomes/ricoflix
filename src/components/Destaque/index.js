@@ -19,7 +19,7 @@ function Destaque (props) {
       grid-column: 1;
     }
 
-    .container {
+    .destaque--container {
       grid-row: 1;
       grid-column: 1;
     }

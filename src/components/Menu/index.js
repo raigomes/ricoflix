@@ -2,6 +2,8 @@ import React from 'react'
 
 import Logo from '../../assets/img/logo.png'
 
+import { Link } from 'react-router-dom'
+
 import './Menu.css'
 
 function Menu (props) {
@@ -11,9 +13,9 @@ function Menu (props) {
         <img className='logo' src={Logo} alt='Logo do Ricoflix' />
       </a>
       {props.btnCadastro &&
-        <button className='btnMenu'>
+        <Link to='/cadastro/video' className='btnMenu'>
           Novo vídeo
-        </button>
+        </Link>
       }
     </nav>
   )

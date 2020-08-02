@@ -19,6 +19,8 @@
     font-size: 21px;
     line-height: 24px;
     font-weight: 600;
+    text-decoration: none;
+    text-align: center;
     background-color: var(--green);
     color: var(--white);
     padding: 14px 0;

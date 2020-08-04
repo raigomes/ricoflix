@@ -9,9 +9,9 @@ import './Menu.css'
 function Menu (props) {
   return (
     <nav className='menu'>
-      <a href='/'>
+      <Link to='/'>
         <img className='logo' src={Logo} alt='Logo do Ricoflix' />
-      </a>
+      </Link>
       {props.btnCadastro &&
         <Link to='/cadastro/video' className='btnMenu'>
           Novo vídeo

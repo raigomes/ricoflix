@@ -38,7 +38,7 @@ export const VideoDestaque = styled.section`
     }
 
     &:last-child {
-      height: 50%;
+      height: auto;
     }
   }
 

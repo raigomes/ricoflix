@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { VideoDestaque, Titulo, Antetitulo, Descricao, BotaoAssistir, Video } from './styles'
+import { VideoDestaque, Titulo, Antetitulo, Descricao, BotaoAssistir } from './styles'
+import Video from '../Video'
 
 function getYoutubeId (youtubeUrl) {
   let videoId = youtubeUrl.split('v=')[1]
@@ -13,35 +14,25 @@ function getYoutubeId (youtubeUrl) {
   return videoId
 }
 
-function getThumbnailUrl (youtubeUrl) {
-  return {
-    mobile: `https://img.youtube.com/vi/${getYoutubeId(youtubeUrl)}/hqdefault.jpg`,
-    desktop: `https://img.youtube.com/vi/${getYoutubeId(youtubeUrl)}/maxresdefault.jpg`
-  }
-}
-
-function getEmbedUrl (youtubeUrl) {
-  return `https://www.youtube.com/embed/${getYoutubeId(youtubeUrl)}`
-}
-
 function Destaque (props) {
-  const bgImage = getThumbnailUrl(props.url)
+  const bgImage = {
+    mobile: `https://img.youtube.com/vi/${getYoutubeId(props.video.url)}/hqdefault.jpg`,
+    desktop: `https://img.youtube.com/vi/${getYoutubeId(props.video.url)}/maxresdefault.jpg`
+  }
+
   return (
     <VideoDestaque image={bgImage}>
       <VideoDestaque.Container>
         <VideoDestaque.Panel>
-          <Antetitulo>{props.videoBeforeTitle}</Antetitulo>
-          <Titulo>{props.videoTitle}</Titulo>
-          <Descricao>{props.videoDescription}</Descricao>
-          <BotaoAssistir href={props.url}>
+          <Antetitulo>{props.categoria}</Antetitulo>
+          <Titulo>{props.video.titulo}</Titulo>
+          <Descricao>{props.descricao}</Descricao>
+          <BotaoAssistir href={props.video.url}>
             Assistir
           </BotaoAssistir>
         </VideoDestaque.Panel>
         <VideoDestaque.Panel>
-          <Video
-            width='646' height='333'
-            src={getEmbedUrl(props.url)}
-          />
+          <Video as='iframe' url={props.video.url} color='green' />
         </VideoDestaque.Panel>
       </VideoDestaque.Container>
     </VideoDestaque>

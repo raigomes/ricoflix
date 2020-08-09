@@ -43,7 +43,6 @@ VideoDestaque.Container = styled.div`
     padding: 0 40px;
   }
 `
-
 VideoDestaque.Panel = styled.div`
   display: flex;
   flex-direction: column;
@@ -137,9 +136,4 @@ export const BotaoAssistir = styled.a`
   @media(min-width: 661px) {
     display: none;
   }
-`
-export const Video = styled.iframe`
-  width: 100%;
-  margin: auto;
-  border: 4px solid var(--green);
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-import { VideoIframe } from './styles'
+import { VideoIframe, VideoThumb } from './styles'
 
 function getYoutubeId (youtubeUrl) {
   let videoId = youtubeUrl.split('v=')[1]
@@ -20,9 +20,12 @@ function Video (props) {
       {props.as === 'iframe'
         ? <VideoIframe
           width='646' height='333'
-          color={props.color}
-          src={`https://www.youtube.com/embed/${videoId}`} />
-        : ''
+          src={`https://www.youtube.com/embed/${videoId}`}
+          color={props.color} />
+        : <VideoThumb
+          src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+          alt='Imagem do video'
+          color={props.color} />
       }
     </>
   )

@@ -19,15 +19,15 @@ function Home () {
 
       <Carousel
         ignoreFirstVideo
-        videoUrl={dadosIniciais.categorias[0]}
+        category={dadosIniciais.categorias[0]}
       />
 
       <Carousel
-        videoUrl={dadosIniciais.categorias[1]}
+        category={dadosIniciais.categorias[1]}
       />
 
       <Carousel
-        videoUrl={dadosIniciais.categorias[2]}
+        category={dadosIniciais.categorias[2]}
       />
 
       <Rodape />

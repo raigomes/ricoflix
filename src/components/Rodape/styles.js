@@ -32,7 +32,7 @@ export const Footer = styled.footer`
         color: var(--green);
     }
 
-    @media(min-width: 661px) {
+    @media(min-width: 881px) {
         .logo {
             width: 250px;
             height: 60px;

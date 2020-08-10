@@ -11,12 +11,13 @@ export const VideoDestaque = styled.section`
     background-image: ${props => `url(${props.image.mobile})`};
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: 100%;
     opacity: .6;
     grid-row: 1;
     grid-column: 1;
   }
 
-  @media(min-width: 661px) {
+  @media(min-width: 881px) {
     &::before {
       background-image: ${props => `url(${props.image.desktop})`};
       background-size: 100%;
@@ -34,7 +35,7 @@ VideoDestaque.Container = styled.div`
   color: var(--grayLight);
   z-index: 2;
 
-  @media(min-width: 661px) {
+  @media(min-width: 881px) {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
@@ -59,7 +60,7 @@ VideoDestaque.Panel = styled.div`
     display: none;
   }
 
-  @media(min-width: 661px) {
+  @media(min-width: 881px) {
     justify-content: center;
     align-items: flex-start;
     
@@ -82,7 +83,7 @@ VideoDestaque.Panel = styled.div`
 export const Antetitulo = styled.div`
   display: none;
   
-  @media(min-width: 661px) {
+  @media(min-width: 881px) {
     font-size: 60px;
     line-height: 70px;
     background-color: var(--frontEnd);
@@ -97,7 +98,7 @@ export const Titulo = styled.h1`
   line-height: 32px;
   font-weight: 300;
 
-  @media(min-width: 661px) {
+  @media(min-width: 881px) {
     font-size: 46px;
     line-height: 54px;
     font-weight: normal;
@@ -108,7 +109,7 @@ export const Titulo = styled.h1`
 export const Descricao = styled.p`
   display: none;
 
-  @media(min-width: 661px) {
+  @media(min-width: 881px) {
     font-size: 18px;
     line-height: 21px;
     font-weight: 300;
@@ -133,7 +134,7 @@ export const BotaoAssistir = styled.a`
   height: 30px;
   margin: auto;
 
-  @media(min-width: 661px) {
+  @media(min-width: 881px) {
     display: none;
   }
 `

@@ -27,7 +27,7 @@
     z-index: 2;
 }
 
-@media(min-width: 661px) {
+@media(min-width: 881px) {
     .menu {
         justify-content: space-between;
         padding: 20px 40px;

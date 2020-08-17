@@ -22,13 +22,10 @@ function Home () {
         category={dadosIniciais.categorias[0]}
       />
 
-      <Carousel
-        category={dadosIniciais.categorias[1]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[2]}
-      />
+      {dadosIniciais.categorias.map((categoria, index) => {
+        if (index === 0) return null
+        return <Carousel category={categoria} />
+      })}
 
       <Rodape />
     </>
